@@ -1,3 +1,6 @@
+## the two functions here are used to calculate and display the inverse of a given matrix input.
+## the first function makeCacheMatrix sets and gets the value of the matrix aswell as that of the
+## inverse of the matrix.
 makeCacheMatrix <- function(x = matrix()){
       inv <- NULL
       set <- function(y){
@@ -12,6 +15,7 @@ makeCacheMatrix <- function(x = matrix()){
 	getInverse = getInverse)
 }
 
+## the cacheSolve function is used to calculate the inverse of the given matrix.
 cacheSolve <- function(x, ...){
       inv <- x$getInverse()
       if(!is.null(inv)){
